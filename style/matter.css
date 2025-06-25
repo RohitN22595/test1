@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px black;
+}
+
+.container1{
+    width: 100%;
+    height: 40%;
+    border: solid 1px rgb(255, 0, 0);
+    display: flex;
+
+}
+
+.moviePoster{
+    height: 100%;
+    width: 20%;
+    border: solid 1px rgb(0, 255, 0);
+    overflow: hidden;
+}
+
+.moviePoster img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movieCall{
+    height: 100%;
+    width: 80%;
+    border: solid 1px rgb(0, 0, 255);
+}
+
+.container2{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    border: solid 1px rgb(144, 0, 255);
+}
+
+.castItem{
+    height: 100%;
+    height: 50%;
+    margin-top: 100px;
+    border: solid 1px rgb(255, 0, 255);
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 10px;  
+}
+
+.castItem::-webkit-scrollbar {
+  display: none;
+}
+.castItem {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.single{
+    flex: 0 0 calc(100% / 6);
+    height: 100%;
+    width: 200px;
+    margin-left: 10px;
+    border: solid 1px rgb(68, 100, 0);
+}
+
+.PhotoContainer{
+    width: 100%;
+    height: 70%;
+    border: solid 1px rgb(114, 7, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.castPhoto{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: solid 1px rgb(255, 0, 0);
+    object-fit: cover;
+}
+
+.castPhoto img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.castDetails{
+    height: 30%;
+    width: 100%;
+    border: solid 1px rgb(24, 158, 216);
+}  
+
+

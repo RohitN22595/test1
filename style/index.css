@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.movieDetails{
+    height: auto;
+    width: 221.325px;
+    border: solid 2px #ccc;
+}
+
+.imageContainer{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border: solid 2px #ff0000;
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures the image covers the container */
+}
+
+.detailContainer{
+    height: auto;
+    width: 100%;
+    /* overflow: hidden; */
+    border: solid 2px #66ff00;
+}
+
+.movieTitle,
+.releaseYear {
+    display: block;
+    font-size: 14px; /* optional: adjust size */
+    word-wrap: break-word; /* for long titles */
+}
+
+.loader {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
